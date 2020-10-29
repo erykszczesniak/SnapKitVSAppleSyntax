@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		7A340740254AAEED0022A995 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A34073E254AAEED0022A995 /* Main.storyboard */; };
 		7A340742254AAEEE0022A995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A340741254AAEEE0022A995 /* Assets.xcassets */; };
 		7A340745254AAEEE0022A995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A340743254AAEEE0022A995 /* LaunchScreen.storyboard */; };
+		7A34074D254B6C710022A995 /* knconstraintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A34074C254B6C710022A995 /* knconstraintViewController.swift */; };
 		8E21551B7278FD47CEBEC4CA /* Pods_AutoLayoutConstraint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C34E925B7FCE744A30E1B2 /* Pods_AutoLayoutConstraint.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		7A340741254AAEEE0022A995 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A340744254AAEEE0022A995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A340746254AAEEE0022A995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A34074C254B6C710022A995 /* knconstraintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = knconstraintViewController.swift; sourceTree = "<group>"; };
 		8E42DEB7D0DA554A1DD8BC29 /* Pods-AutoLayoutConstraint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayoutConstraint.release.xcconfig"; path = "Target Support Files/Pods-AutoLayoutConstraint/Pods-AutoLayoutConstraint.release.xcconfig"; sourceTree = "<group>"; };
 		FCB37B5CA47E39E51E42BFEA /* Pods-AutoLayoutConstraint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayoutConstraint.debug.xcconfig"; path = "Target Support Files/Pods-AutoLayoutConstraint/Pods-AutoLayoutConstraint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +72,7 @@
 				7A340741254AAEEE0022A995 /* Assets.xcassets */,
 				7A340743254AAEEE0022A995 /* LaunchScreen.storyboard */,
 				7A340746254AAEEE0022A995 /* Info.plist */,
+				7A34074C254B6C710022A995 /* knconstraintViewController.swift */,
 			);
 			path = AutoLayoutConstraint;
 			sourceTree = "<group>";
@@ -80,7 +83,6 @@
 				FCB37B5CA47E39E51E42BFEA /* Pods-AutoLayoutConstraint.debug.xcconfig */,
 				8E42DEB7D0DA554A1DD8BC29 /* Pods-AutoLayoutConstraint.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A34074D254B6C710022A995 /* knconstraintViewController.swift in Sources */,
 				7A34073D254AAEED0022A995 /* ViewController.swift in Sources */,
 				7A340739254AAEED0022A995 /* AppDelegate.swift in Sources */,
 				7A34073B254AAEED0022A995 /* SceneDelegate.swift in Sources */,

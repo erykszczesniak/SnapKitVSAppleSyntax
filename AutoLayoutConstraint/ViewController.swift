@@ -1,5 +1,4 @@
 import UIKit
-import SnapKit
 
 class ViewController: UIViewController {
     
@@ -39,62 +38,32 @@ class ViewController: UIViewController {
             loginButton.backgroundColor = UIColor(red: 171/255, green: 163/255, blue: 177/255, alpha: 1)
              
              
-        view.addSubview(imgView)
-        imgView.snp.makeConstraints({ (make) in
-            make.left.equalToSuperview()
-            make.right.equalToSuperview()
-            make.top.equalToSuperview()
-            make.bottom.equalToSuperview()
-            
-        })
+        view.addSubviews(views: imgView, termLabel, fbLoginButton, registerEmailButton, loginButton)
+        imgView.fill(toView: view)
         
-        view.addSubview(termLabel)
-        termLabel.snp.makeConstraints { (make) in
-            make.left.equalToSuperview().offset(16)
-            make.right.equalToSuperview().offset(-16)
-        }
+        termLabel.horizontal(toView: view, space: 16)
+        termLabel.verticalSpacingDown(toView: fbLoginButton, space: -16)
         
-          view.addSubview(fbLoginButton)
-                fbLoginButton.snp.makeConstraints { (make) in
-                    make.left.equalToSuperview()
-                    make.right.equalToSuperview()
-                    make.height.equalTo(64)
-                }
-                
-
-                view.addSubview(registerEmailButton)
-                registerEmailButton.snp.makeConstraints { (make) in
-                    make.left.equalToSuperview()
-                    make.right.equalToSuperview()
-                    make.height.equalTo(64)
-                }
-                
-                
-                view.addSubview(loginButton)
-                loginButton.snp.makeConstraints { (make) in
-                    make.left.equalToSuperview()
-                    make.right.equalToSuperview()
-                    make.bottom.equalToSuperview()
-                    make.height.equalTo(20)
-                }
-                
-                registerEmailButton.snp.makeConstraints { (make) in
-                    make.bottom.equalTo(loginButton.snp.top)
-                }
-
-                fbLoginButton.snp.makeConstraints { (make) in
-                    make.bottom.equalTo(registerEmailButton.snp.top)
-                }
-
-                termLabel.snp.makeConstraints { (make) in
-                    make.bottom.equalTo(fbLoginButton.snp.top).inset(-16)
-                }
-            }
+        
+        fbLoginButton.horizontal(toView: view)
+        fbLoginButton.height(64)
+        fbLoginButton.verticalSpacingDown(toView: registerEmailButton)
+        
+        registerEmailButton.horizontal(toView: view)
+        registerEmailButton.height(64)
+        registerEmailButton.verticalSpacingDown(toView: loginButton)
+        
+        
+        loginButton.horizontal(toView: view)
+        loginButton.bottom(toView: view)
+        loginButton.height(32)
+        
+        
     
 }
         
         
-
+}
 
     
 
