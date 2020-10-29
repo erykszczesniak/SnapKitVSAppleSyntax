@@ -1,0 +1,6 @@
+framework module Pods_AutoLayoutConstraint {
+  umbrella header "Pods-AutoLayoutConstraint-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,4 +1,5 @@
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
     
@@ -40,42 +41,7 @@ class ViewController: UIViewController {
              
         
         
-            view.addSubview(imgView)
-               imgView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-               imgView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-               imgView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-               imgView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
-            view.addSubview(termLabel)
-              termLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16).isActive = true
-              termLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16).isActive = true
-              
-              
-              
-            view.addSubview(fbLoginButton)
-              fbLoginButton.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-              fbLoginButton.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-              fbLoginButton.heightAnchor.constraint(equalToConstant: 64).isActive = true
-              
-              
-            view.addSubview(registerEmailButton)
-              registerEmailButton.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-              registerEmailButton.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-              registerEmailButton.heightAnchor.constraint(equalToConstant: 64).isActive = true
-              
-              
-            view.addSubview(loginButton)
-              loginButton.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-              loginButton.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-              loginButton.heightAnchor.constraint(equalToConstant: 48).isActive = true
-              loginButton.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-              
-              registerEmailButton.bottomAnchor.constraint(equalTo: loginButton.topAnchor).isActive = true
-              fbLoginButton.bottomAnchor.constraint(equalTo: registerEmailButton.topAnchor).isActive = true
-              termLabel.bottomAnchor.constraint(equalTo: fbLoginButton.topAnchor, constant: -16).isActive = true
-
-        
-       
 
       }
 
