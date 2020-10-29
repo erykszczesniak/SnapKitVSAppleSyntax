@@ -39,11 +39,64 @@ class ViewController: UIViewController {
             loginButton.backgroundColor = UIColor(red: 171/255, green: 163/255, blue: 177/255, alpha: 1)
              
              
+        view.addSubview(imgView)
+        imgView.snp.makeConstraints({ (make) in
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.top.equalToSuperview()
+            make.bottom.equalToSuperview()
+            
+        })
         
+        view.addSubview(termLabel)
+        termLabel.snp.makeConstraints { (make) in
+            make.left.equalToSuperview().offset(16)
+            make.right.equalToSuperview().offset(-16)
+        }
+        
+          view.addSubview(fbLoginButton)
+                fbLoginButton.snp.makeConstraints { (make) in
+                    make.left.equalToSuperview()
+                    make.right.equalToSuperview()
+                    make.height.equalTo(64)
+                }
+                
+
+                view.addSubview(registerEmailButton)
+                registerEmailButton.snp.makeConstraints { (make) in
+                    make.left.equalToSuperview()
+                    make.right.equalToSuperview()
+                    make.height.equalTo(64)
+                }
+                
+                
+                view.addSubview(loginButton)
+                loginButton.snp.makeConstraints { (make) in
+                    make.left.equalToSuperview()
+                    make.right.equalToSuperview()
+                    make.bottom.equalToSuperview()
+                    make.height.equalTo(20)
+                }
+                
+                registerEmailButton.snp.makeConstraints { (make) in
+                    make.bottom.equalTo(loginButton.snp.top)
+                }
+
+                fbLoginButton.snp.makeConstraints { (make) in
+                    make.bottom.equalTo(registerEmailButton.snp.top)
+                }
+
+                termLabel.snp.makeConstraints { (make) in
+                    make.bottom.equalTo(fbLoginButton.snp.top).inset(-16)
+                }
+            }
+    
+}
         
         
 
-      }
+
+    
 
    
         
@@ -62,5 +115,5 @@ class ViewController: UIViewController {
     
 
 
-}
+
 
